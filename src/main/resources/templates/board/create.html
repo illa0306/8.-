@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>게시글 작성</title>
+</head>
+<body>
+<!-- 게시글 작성 -->
+<h1>게시글 작성</h1>
+<!-- 제목 -->
+<form th:action="@{/boards/{boardId}/article/}" method="POST">
+  <h2>제목</h2><br>
+  <label for="input-title">
+    <input type="text" id="input-title" name="title">
+  </label><br>
+<!-- 내용 -->
+  <h3>내용</h3><br>
+  <label for="input-post">
+    <input type="text" id="input-post" name="post">
+  </label><br>
+</form>
+<!-- 비밀번호 -->
+
+<!-- 작성 완료 -->
+
+  <!-- 작성 완료 버튼 -->
+  <a href="/article/{articleId}/">
+    <input type="submit" value="작성 완료">
+  </a>
+
+</body>
+</html>
